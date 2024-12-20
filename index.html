@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costal-Clash</title>
+    <link rel="stylesheet" href="vortex.css" />
+  </head>
+  <body>
+    <div class="video-container">
+        <video class="video-background" autoplay muted loop >
+            <source src="vortex.mp4" type="video/mp4">    
+        </video>
+        <div class="overlay"></div>
+    </div>
+    
+    <nav id="nav" class="navbar">
+      <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+              <img src="technexLogo.d94cac2ba104893e5296.png" alt="Technex Logo" width="40" height="40">
+              <span>TECHNEX 2K25</span>
+          </a>
+
+          <!-- Hamburger Icon -->
+          <div class="navbar-toggler" onclick="toggleSidebar()">
+              <span class="toggler-icon">&#9776;</span>
+          </div>
+
+          <!-- Centered Links (For larger screens) -->
+          <ul class="nav-links" id="navLinks">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Workshop</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+
+          <!-- Login Buttons (For larger screens) -->
+          <div class="login-buttons">
+            <a href="#" class="btn l">Login</a>
+            <a href="#" class="btn s">Sign Up</a>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside id="mySidebar" class="sidebar">
+      <div class="close-btn" onclick="toggleSidebar()">&times;</div>
+      <div class="s-cnt">
+      <a href="#">Home</a>
+      <a href="#">Workshop</a>
+      <a href="#">Gallery</a>
+      <a href="#">Sponsors</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+      </div>
+      
+  </aside>
+
+    <div class="ev-logo">
+      <img class="ev-img" src="vortex.png" alt="" />
+    </div>
+
+    <section class="ev-dtl">
+      <div class="main">
+        <div class="d1">
+          <span class="dtl-title"> Description </span>
+
+          <span class="dtl">
+            VORTEX is a competitive Valorant gaming event aimed at highlighting the dynamic nature of esports through strategy, communication, and teamwork. The event fosters collaboration among gaming enthusiasts from various colleges, promoting competitive gaming as a professional career pathway. 
+          </span>
+        </div>
+        <div class="d2">
+          <span class="dtl-title"> Srages & Format </span>
+          <span class="dtl">
+            <br />
+            Format : An event will be in Hybrid mode.
+            <br />
+            VORTEX lies in its focus on strategic team-based gameplay within Valorant, emphasizing communication, teamwork, and creativity.
+          </span>
+        </div>
+        <div class="d3">
+            <span class="amt">Prize Amount: up to
+                <span class="prize"> 
+                    Rs. 70,000/-
+                </span>
+            </span>
+          </div>
+
+          <div class="d4">
+            <div class="d4-in">
+                <span>Date: 20th & 21th January</span>
+                <br>
+                <span>Team: 4-5 Members</span>
+            </div>
+            <div class="d4-in">
+                <span>Entry Fees:Rs. 500 per team</span>
+                <br>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="button">
+            <button class="btn"> 
+                Register
+            </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="dsh">
+        <div class="dsh-buttons">
+            <button onclick="showContent('timeline')">Timeline</button>
+            <button onclick="showContent('faqs')">FAQs</button>
+            <button onclick="showContent('rules')">Rules</button>
+            <button onclick="showContent('contact')">Contact</button>
+          </div>
+        
+          <!-- Content Sections -->
+          
+          <div id="timeline" class="ctn-box">
+            <br>
+            <ul>
+              <li><b>Day 1 (Qualifiers):</b>  All single-elimination matches take place, with the final 5 teams qualifying for Day 2.</li>
+
+              <br>
+              <li><b>Day 2 (Finals):</b> Round 2 matches and Finals determine the winners.</li>
+            </ul>
+            
+          </div>
+          
+          <div id="faqs" class="ctn-box">
+            FAQs: 1. How to register? Visit our website. 2. How many people can there be in one team? A maximum of 4 members.
+          </div>
+        
+          <div id="rules" class="ctn-box">
+            <ul>
+              <li>Participants can play either online from home or offline from the SVPCET campus.</li>
+              <li> Internet will be provided only on campus; players must bring their own hardware.</li>
+              <li> Team members can belong to different colleges, but all players must have valid college IDs.</li>
+              <li> Single-elimination matches. No overtime for draws; the winner of the 27th round advances.</li>
+              <li> The winning teams advance to the next round, and losing teams are eliminated.</li>
+            </ul>
+          </div>
+        
+          <div id="contact" style="text-align: center;" class="ctn-box">
+            <span>
+              <b>Coordinator</b>
+              <br />
+              <strong style="font-size: large">Aditya Umathe</strong>
+              <br />
+              
+              <br />
+              
+            </span>
+            <br />
+            <br />
+            <br />
+            <span>
+              <b>Co-coordinator</b>
+              <br />
+              <strong style="font-size: large">Shounak Gan</strong>
+              <br />
+              
+              <br />
+              
+            </span>
+          </div>
+        
+    </section>
+    
+      <script>
+        function showContent(sectionId) {
+      const contents = document.querySelectorAll('.ctn-box');
+      contents.forEach(content => content.style.display = 'none');
+
+      const selectedContent = document.getElementById(sectionId);
+      selectedContent.style.display = 'block';
+    }
+
+    function toggleSidebar() {
+    const sidebar = document.getElementById("mySidebar");
+    sidebar.classList.toggle("active");
+    }
+  </script>
+  </body>
+</html>
