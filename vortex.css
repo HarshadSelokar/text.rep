@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DynaPuff:wght@400..700&family=Gruppo&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Gruppo;
+    /* background-color: black; */
+}
+
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgb(0 0 0 / 61%), rgb(0 0 0 / 18%));
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255 255 255 / 12%);
+    backdrop-filter: blur(5.4px);
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 9%;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links li{
+
+    list-style-type: none;
+    
+}
+
+
+.nav-links li a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #848484;
+}
+
+/* Login Buttons */
+.btn{
+    color: white;
+      border: 1px solid white;
+      padding: 11px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 2px;
+  }
+  
+  
+  .btn{
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .s{
+    background-color: white;
+    color: black;
+  }
+  .s:hover {
+    background-color: #969696;
+  
+  }
+  
+  .login-buttons {
+    position: relative;
+    right: 4rem;
+  }
+  
+/* Hamburger Icon */
+.navbar-toggler {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background: rgb(255 255 255 / 12%);
+    backdrop-filter: blur(5.4px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 2000;
+}
+
+.sidebar.active {
+    left: 0;
+    background: rgb(255 255 255 / 12%);
+    backdrop-filter: blur(5.4px);
+}
+
+.sidebar .close-btn {
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.sidebar a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+
+
+.s-cnt{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    a{
+
+        font-size: 23px;
+        text-decoration: none;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+
+    }
+}
+
+
+
+
+.ev-logo{
+    margin-top: 5rem;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ev-img{
+
+    height: 15rem;
+}
+
+.ev-dtl{
+
+    /* background-color:red; */
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}
+
+.main{
+
+    /* background-color: aquamarine; */
+    background: rgb(255 255 255 / 12%);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgb(17, 35, 126);
+    margin: 3rem;
+    /* padding-bottom: 3rem; */
+}
+
+.d1{
+
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.d2{
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.dtl-title{
+
+    margin: 15px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(17, 35, 126);
+}
+.dtl{
+
+    margin: 1rem;
+    font-size: 21px;
+}
+
+.d3{
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+
+}
+
+
+.prize{
+
+    display: inline-block; 
+    color: white;
+    transition: color 0.3s ease-in-out;
+    font-weight: 800;
+}
+
+.prize:hover{
+
+    color: rgb(17, 35, 126);
+}
+
+.amt{
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.d4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+
+    span{
+
+        font-size: 25px;
+        margin: 0.5rem;
+    }
+}
+
+
+.button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 900;
+    color: black;
+    background-color: white;
+
+  }
+  
+  .btn:hover {
+    background-color: rgb(17, 35, 126);
+    color: #f4f4f4;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  .btn::after {
+    background-color: rgb(17, 35, 126);
+  }
+  
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  
+   
+}
+
+
+
+.dsh{
+    position: relative;
+    z-index: 0;
+    font-family: Gruppo;
+    padding-bottom: 6rem;
+}
+
+.dsh-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: Gruppo;
+}
+
+.dsh-buttons button {
+    background-color: #ffffff3f;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(17, 35, 126);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Gruppo;
+    color: white;
+}
+
+.dsh-buttons button:hover {
+    background-color: rgb(17, 35, 126);
+    color: rgb(255, 255, 255);
+    font-family: Gruppo;
+
+}
+.ctn-box {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 59%);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 2px solid rgb(17, 35, 126);
+    border-radius: 10px;
+    font-family: Gruppo;
+    min-height: 150px;
+    text-align: left;
+    font-size: 16px;
+    display: none; 
+    background-color: #ffffff30;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
+
+    
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+
+    .ev-dtl{
+        margin: 0;
+    }
+
+    .d4{
+
+        span{
+
+            font-size: 15px;
+        }
+    }
+
+    .ctn-box{
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+    }
+    .sidebar {
+        display: block; /* Allow sidebar functionality */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links,
+    .login-buttons {
+        display: none; /* Hide links and buttons */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show hamburger icon */
+        position: relative;
+        right: 42px;
+    }
+}
